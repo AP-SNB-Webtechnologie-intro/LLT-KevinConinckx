@@ -1,0 +1,36 @@
+@media only screen and (min-width: 1400px) {
+ #myheader{
+  max-width: 1366px !important;
+  margin: 0 auto;
+ } 
+}
+@media only screen and (min-width: 1150px) {
+  #myheader .toggle {
+    display: none;
+  }
+  .custom-nav {
+    display: none !important;
+  }
+}
+/* Screen size 1200px */
+@media only screen and (max-width: 1200px) {
+  #myheader .logo img {
+    margin-left: -50px;
+  }
+}
+/* Screen size 1150px */
+@media only screen and (max-width: 1150px) {
+  .nav-links {
+    display: none !important;
+  }
+  .cart-area {
+    display: none;
+  }
+  #myheader .logo a {
+    margin-left: 0px;
+  }
+  #myheader .toggle {
+    display: block;
+  }
+}
+
