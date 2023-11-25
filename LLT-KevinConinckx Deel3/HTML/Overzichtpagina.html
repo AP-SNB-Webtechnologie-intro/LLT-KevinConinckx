@@ -2,37 +2,49 @@
 <html lang="en">
 
 <head>
+    <!-- required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/images/favicon-32x32.webp" type="image/x-icon">
+    <link rel="shortcut icon" href="bestanden/foto's/favicon-32x32.webp" type="image/x-icon">
     <title>Fitness & Health</title>
-    <!-- Css Files -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="bestanden/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bestanden/css/style.css">
+    <link rel="stylesheet" href="bestanden/css/responsive.css">
+    <!-- Javascript Bootstrap Bundel met Popper -->
+    <script src="bestanden/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/d94e9b7d2c.js" crossorigin="anonymous"></script>
+    <!-- Javascript jQuery -->
+    <script src="bestanden/js/jquery.min.js"></script>
+    <!-- Javascript eigen geschreven script -->
+    <script src="bestanden/js/script.js"></script>
 </head>
 
 <body>
-    <!-- Section1 -->
+    <!-- navbar met wrapper die mijn gewone navigatie balk voorstelt tijdens hebt gebruik van een pc bijvoorbeeld -->
     <div class="wrapper">
         <header id="myheader">
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="Homepagina.html">Home</a></li>
                 <li><a href="Overzichtpagina.html" class="active">Overzichtpagina</a></li>
-                <li><a href="voeding.html">Voeding</a></li>
-                <li><a href="Supplementen.html">Supplementen</a></li>
-                <li><a href="training.html">Training</a></li>
-                <li><a href="recovery.html">Recovery</a></li>
-                <li><a href="mental.html">Mental</a></li>
-                <li><a href="voor.html">Voor & Nadelen</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Voedingpagina.html">Voeding</a></li>
+                <li><a href="Supplementenpagina.html">Supplementen</a></li>
+                <li><a href="Trainingpagina.html">Training</a></li>
+                <li><a href="Recoverypagina.html">Recovery</a></li>
+                <li><a href="Mentalpagina.html">Mental</a></li>
+                <li><a href="Voor&Nadeelpagina.html">Voor & Nadelen</a></li>
+                <li><a href="Contactpagina.html">Contact</a></li>
             </ul>
+            <!-- mijn logo "Fitness & Health" -->
             <div class="logo text-center">
                 <a href=""><span>Fitness & Health</span></a>
             </div>
+            <!-- dit word gebruikt als mijn scherm onder bepaalde pixels gaat en de navbar ook verplaatst. -->
             <div class="toggle">
                 <i class="fa-solid fa-bars"></i>
             </div>
+            <!-- dit is de zoekbalk rechtsboven op mijn pagina die bij het resizen onder bepaalde pixels ook in de nieuwe navbar terechtkomt -->
             <div class="cart-area">
                 <div class="input-group rounded">
                     <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
@@ -43,62 +55,70 @@
                 </div>
             </div>
         </header>
+            <!-- Dit is de eigenlijk pagina sectie waarbij ik mijn tekst heb geplaatst -->
         <section id="page2-section">
             <div class="container home-content pt-5 pb-3">
                 <div class="row gx-5">
+                    <!-- dit is mijn eerste onderwerp op de Overzichtspagina "Voeding" waar een klein beetje tekst bij staat waarover de pagina gaat, als je hierop klikt kom je op de pagina terecht. -->
                     <div class="col-md-4 mb-4">
                         <div class="subbox custom-flex text-center text-light">
                             <h3 class="text-light">Voeding</h3>
                             <div class="img-area ">
-                                <img src="assets/images/fruits.jpg" alt="fruits" class="circle">
+                                    <!-- dit is mijn foto voor op de pagina -->
+                                <img src="bestanden/foto's/fruits.jpg" alt="fruits" class="circle">
                             </div>
                             <h6 class="p-3">hierbij gaan we kijken naar wat voor voeding best genomen wordt</h6>
                         </div>
                     </div>
+                    <!-- dit is mijn tweede onderwerp op de Overzichtspagina "Supplementen" waar een klein beetje tekst bij staat waarover de pagina gaat, als je hierop klikt kom je op de pagina terecht. -->
                     <div class="col-md-4 mb-4">
                         <div class="subbox custom-flex text-center text-light">
                             <h3 class="text-light">Supplementen</h3>
                             <div class="img-area ">
-                                <img src="assets/images/medicine.png" alt="medicine" class="circle">
+                                <img src="bestanden/foto's/medicine.png" alt="medicine" class="circle">
                             </div>
                             <h6 class="p-3">Welke supplementatie gebruiken we het best?</h6>
                         </div>
                     </div>
+                    <!-- dit is mijn derde onderwerp op de Overzichtspagina "Training" waar een klein beetje tekst bij staat waarover de pagina gaat, als je hierop klikt kom je op de pagina terecht. -->
                     <div class="col-md-4 mb-4">
                         <div class="subbox custom-flex text-center text-light">
                             <h3 class="text-light">Training</h3>
                             <div class="img-area ">
-                                <img src="assets/images/Training.jpg" alt="medicine" class="circle">
+                                <img src="bestanden/foto's/Training.jpg" alt="medicine" class="circle">
                             </div>
-                            <h6 class="p-3">Hoc gaat onze training cruit
+                            <h6 class="p-3">hoe gaat onze training eruit
                                 zien?</h6>
                         </div>
                     </div>
+                    <!-- dit is mijn vierde onderwerp op de Overzichtspagina "Recovery" waar een klein beetje tekst bij staat waarover de pagina gaat, als je hierop klikt kom je op de pagina terecht. -->
                     <div class="col-md-4">
                         <div class="subbox custom-flex text-center text-light">
                             <h3 class="text-light">Recovery</h3>
                             <div class="img-area ">
-                                <img src="assets/images/sleep.jpeg" alt="medicine" class="circle">
+                                <img src="bestanden/foto's/sleep.jpeg" alt="medicine" class="circle">
                             </div>
-                            <h6 class="p-3">Hoe recover je het beste
+                            <h6 class="p-3">Hoe recover je het beste na
                                 een workout?</h6>
                         </div>
                     </div>
+                    <!-- dit is mijn vijfde onderwerp op de Overzichtspagina "Mentaal" waar een klein beetje tekst bij staat waarover de pagina gaat, als je hierop klikt kom je op de pagina terecht. -->
                     <div class="col-md-4">
                         <div class="subbox custom-flex text-center text-light">
                             <h3 class="text-light">Mentaal</h3>
                             <div class="img-area ">
-                                <img src="assets/images/Mental.jpg" alt="medicine" class="circle">
+                                <img src="bestanden/foto's/Mental.jpg" alt="medicine" class="circle">
                             </div>
                             <h6 class="p-3">Wat zijn de mentale
                                 voordelen?</h6>
                         </div>
                     </div>
+                    <!-- dit is mijn zesde onderwerp op de Overzichtspagina "Voor&Nadelen" waar een klein beetje tekst bij staat waarover de pagina gaat, als je hierop klikt kom je op de pagina terecht. -->
                     <div class="col-md-4">
                         <div class="subbox custom-flex text-center text-light">
                             <h3 class="text-light">Voor & nadelen</h3>
                             <div class="img-area ">
-                                <img src="assets/images/Voor_Nadelen.jpg" alt="medicine" class="circle">
+                                <img src="bestanden/foto's/Voor_Nadelen.jpg" alt="medicine" class="circle">
                             </div>
                             <h6 class="p-3">Is het alleen maar positief of
                                 hangen er ook negatieve
@@ -113,16 +133,17 @@
     <!-- Fixed Navbar -->
     <div class="custom-nav">
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="Homepagina.html">Home</a></li>
             <li><a href="Overzichtpagina.html" class="active">Overzichtpagina</a></li>
-            <li><a href="voeding.html">Voeding</a></li>
-            <li><a href="Supplementen.html">Supplementen</a></li>
-            <li><a href="training.html">Training</a></li>
-            <li><a href="recovery.html">Recovery</a></li>
-            <li><a href="mental.html">Mental</a></li>
-            <li><a href="voor.html">Voor & Nadelen</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="Voedingpagina.html">Voeding</a></li>
+            <li><a href="Supplementenpagina.html">Supplementen</a></li>
+            <li><a href="Trainingpagina.html">Training</a></li>
+            <li><a href="Recoverypagina.html">Recovery</a></li>
+            <li><a href="Mentalpagina.html">Mental</a></li>
+            <li><a href="Voor&Nadeelpagina.html">Voor & Nadelen</a></li>
+            <li><a href="Contactpagina.html">Contact</a></li>
         </ul>
+         <!-- de searchbar  -->
         <div class="input-group rounded">
             <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
                 aria-describedby="search-addon" />
@@ -131,11 +152,6 @@
             </span>
         </div>
     </div>
-    <!-- Javascript Files -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/d94e9b7d2c.js" crossorigin="anonymous"></script>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
