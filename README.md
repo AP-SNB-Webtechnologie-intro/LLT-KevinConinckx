@@ -43,7 +43,7 @@ Je kan een grotere lijst vinden op websites als [apilist.fun](https://apilist.fu
 **BELANGRIJK!** Je moet niet alle teksten volledig zelf schrijven. Maak *om de teksten te schrijven* gerust gebruik van tools als chat GPT.
 
 Je website bevat verschillende pagina's:
- - **home** (`index.html`): 1 pagina met een beschrijving van jouw onderwerp. Deze pagina *moet* bevatten:
+ - **home** (`Homepagina.html`): 1 pagina met een beschrijving van jouw onderwerp. Deze pagina *moet* bevatten:
    - een sfeerbeeld
    - een uitleg over jezelf in de context van het onderwerp
    - een foto van jezelf
@@ -58,7 +58,7 @@ Je website bevat verschillende pagina's:
    - minstens 1 `figure` met afbeelding en bijschrift
    - minstens 2 topics pagina's bevatten een kaart met een markering, met behulp van de Leaflet library
    - 1 semantische tabel met bijschrift
- - **contact** (`contact.html`): 1 pagina met een contactformulier waar zowel jij als de webdesigner gecontacteerd kunnen worden. Deze pagina *moet* bevatten:
+ - **contact** (`Contactpagina.html`): 1 pagina met een contactformulier waar zowel jij als de webdesigner gecontacteerd kunnen worden. Deze pagina *moet* bevatten:
    - een contactformulier voor de 'admin' en voor de 'webdesigner' (1 ervan mag dus een fictief persoon zijn, maar het moeten 2 verschillende personen zijn)
    - een kaart met markering om een locatie aan te duiden
 

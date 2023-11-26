@@ -1,3 +1,7 @@
+/*Deze CSS-code bevat mediaquery's om verschillende stijlen toe te passen op basis van de schermbreedte.
+Deze mediaquery's worden gebruikt om een ​​responsief ontwerp te creëren, waarbij de lay-out aangepast worden op basis van de schermbreedte. 
+*/
+
 @media only screen and (min-width: 1400px) {
  #myheader{
   max-width: 1366px !important;
@@ -12,13 +16,13 @@
     display: none !important;
   }
 }
-/* Screen size 1200px */
+/* Scherm breedte 1200px */
 @media only screen and (max-width: 1200px) {
   #myheader .logo img {
     margin-left: -50px;
   }
 }
-/* Screen size 1150px */
+/* Scherm breedte 1150px */
 @media only screen and (max-width: 1150px) {
   .nav-links {
     display: none !important;
