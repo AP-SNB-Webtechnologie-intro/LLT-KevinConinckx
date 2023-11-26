@@ -46,11 +46,10 @@
             <!-- dit is de zoekbalk rechtsboven op mijn pagina die bij het resizen onder bepaalde pixels ook in de nieuwe navbar terechtkomt -->
             <div class="cart-area">
                 <div class="input-group rounded">
-                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-                        aria-describedby="search-addon" />
-                    <span class="input-group-text border-0" id="search-addon">
-                        <i class="fas fa-search"></i>
-                    </span>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                      </form>
                 </div>
             </div>
         </header>
@@ -105,13 +104,12 @@
             <li><a href="Voor&Nadeelpagina.html">Voor & Nadelen</a></li>
             <li><a href="Contactpagina.html">Contact</a></li>
         </ul>
-        <!-- de searchbar  -->
-        <div class="input-group rounded">
-            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-                aria-describedby="search-addon" />
-            <span class="input-group-text border-0" id="search-addon">
-                <i class="fas fa-search"></i>
-            </span>
+        <!-- de searchbar met werkende zoekknop  -->
+        <div class="input-group rounded justify-content-center">
+            <form class="d-flex">
+                <input class="form-control me-2 w" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
         </div>
     </div>
     <footer class="container-fluid text-center h6 small p-4">&copy; Fitness&Health</footer>

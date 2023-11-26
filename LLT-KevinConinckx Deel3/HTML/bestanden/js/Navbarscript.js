@@ -1,7 +1,7 @@
-// Dit zorgt er voor dat de vode word uitgevoderd wanneer de pagina helemaal geladen is
+// Dit zorgt er voor dat de code word uitgevoerd wanneer de pagina helemaal geladen is
 $(document).ready(function () {
   // Custom navabar Hide Show
-  // hiermee word een klik gebeurtenis listener element met de class "toggle" aangezet wanneer een element aangeklikt word word het uitgevoerd dus als je klikt op de gerescalede navbar dan opent deze functie
+  // hiermee word een klik gebeurtenis listener element met de class "toggle" aangezet wanneer een element aangeklikt word word het uitgevoerd dus concreet als je klikt op de gerescalede navbar dan opent deze functie
   $(".toggle").on("click", function () {
     var icon = $(this).find("i");
     // dit zorgt ervoor als het de klasse "Fa-bars" heeft betekent dat de navbar verborgen is en als het geen "fa-bars" heeft zal de navbar zichbaar worden"
@@ -14,4 +14,3 @@ $(document).ready(function () {
     $(".custom-nav").slideToggle();
   });
 });
-
