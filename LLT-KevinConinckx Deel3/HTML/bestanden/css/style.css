@@ -1,13 +1,20 @@
 /* Font css */
+/* hiermee wordt het lettertype voor de hoofdtekst ingesteld
+op sans-serif en verbergt de horizontale overflow alsook
+krijg je een light blauwe achtergrond */
 body {
   font-family: sans-serif;
   overflow-x: hidden;
   background: var(--light-blue);
 }
+/* Verwijdert de underline van een link en geeft het een witte kleur
+ */
 a {
   text-decoration: none;
   color: var(--white);
 }
+/* zet de cursor in als aanwijze voor kopellingen, afbeeldingen en SVG elementen
+ */
 a,
 img,
 svg {
@@ -15,6 +22,7 @@ svg {
 }
 
 /* Kleur Variables */
+/* Definieert de kleur voor hele gebruik van stylesheet */
 :root {
   --light-blue: #265a5b;
   --white: #ffff;
@@ -35,7 +43,6 @@ svg {
   padding: 20px;
   background: var(--light-blue);
 }
-
 #myheader ul {
   display: flex;
   width: 475px !important;
@@ -55,9 +62,13 @@ svg {
 #myheader ul li a {
   font-size: 16px;
 }
+/* verandert de tekstkleur van de links in een listitem wanneer je
+met je muis over de link gaat zoals in de navbar */
 #myheader ul li a:hover {
   color: cyan;
 }
+/* creërt een underline voor de links in de list de onderlijning
+expands wanner je erover hovert */
 #myheader ul li::after {
   content: "";
   width: 0%;
@@ -71,6 +82,8 @@ svg {
   margin: 0 auto;
   transition: 1s;
 }
+/* zet de stijlen voor de geselecteerde tekst als een cyaan achtergrond
+met zwarte tekst */
 ::selection {
   background: cyan;
   color: rgb(0, 0, 0);
@@ -94,6 +107,8 @@ svg {
 .cart-btn:hover {
   background: var(--grey);
 }
+/* dit zijn de stijlen voor de toggle button op het begin zijn deze verborgen
+met een bruine achtergrond */
 #myheader .toggle {
   width: 3rem;
   height: 3rem;
@@ -105,7 +120,8 @@ svg {
 }
 #myheader .toggle i {
   font-size: 24px;
-  /* transform: translateY(50%); */
+  /* hiermee centreren we het element omdat we de hoogte en breedte
+  van de container niet vanbuiten weten, dit is voor het dropdown menu icon dat we hebben als we onze site rescalen op een mobiele weergave bijvoorbeeld */
   position: relative;
   top: 50%;
   left: 50%;
@@ -113,6 +129,7 @@ svg {
 
   color: white;
 }
+/* dit is voor de gerescaled zoekbalk op mobiele weergave bijvoorbeeld */
 .input-group > .form-control {
   border-radius: 10px 0px 0px 10px !important;
 }
@@ -124,6 +141,8 @@ span#search-addon {
   border-radius: 0px 10px 10px 0px !important;
 }
 /* Navbar css */
+/* stijlen voor een aangepaste navbar met donkere achtergrond, gecentreerde tekst
+en op het begin nog verborgen en als je rescaled naar bv mobiele weergave dan krijg je deze nieuwe navbar te zien */
 .custom-nav {
   width: 100%;
   background: #303e4b;
@@ -145,6 +164,8 @@ span#search-addon {
   position: relative;
 }
 /* Homepagina css */
+/* stijlen voor de inhoud van de Homepagina, tekstkleur, de breedte en borders
+van een elemente en de styling span */
 .home-content p {
   color: #cccccc;
 }
@@ -160,6 +181,8 @@ span#search-addon {
   border-radius: 50%;
 }
 /* Overzichtpagina CSS */
+/* stijlen voor afbeelding gebeid in de sectie waar ook de afmetingen ingesteld worden
+en zorgen dat de container gevuld is */
 #page2-section .img-area {
   width: 200px;
   height: 200px;
@@ -169,6 +192,8 @@ span#search-addon {
   width: 100%;
   height: 100%;
 }
+/* stijlen voor de flexcontainer waar de innoud gecentreerd wordt
+en de flex richting ingesteld is */
 .custom-flex {
   display: flex;
   justify-content: center;
