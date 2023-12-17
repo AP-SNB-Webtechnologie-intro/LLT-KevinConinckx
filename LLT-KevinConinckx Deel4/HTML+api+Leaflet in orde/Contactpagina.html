@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="bestanden/foto's/favicon-32x32.webp" type="image/x-icon">
+    <title>Fitness & Health</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="bestanden/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bestanden/css/style.css">
+    <link rel="stylesheet" href="bestanden/css/responsive.css">
+    <!-- Javascript Bootstrap Bundel met Popper -->
+    <script src="bestanden/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/d94e9b7d2c.js" crossorigin="anonymous"></script>
+    <!-- Javascript jQuery -->
+    <script src="bestanden/js/jquery.min.js"></script>
+    <!-- Javascript eigen geschreven script voor Navbar -->
+    <script src="bestanden/js/Navbarscript.js"></script>
+    <!-- leaflet css + Mapscript -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    
+
+</head>
+<body>
+    <!-- navbar met wrapper die mijn gewone navigatie balk voorstelt tijdens hebt gebruik van een pc bijvoorbeeld -->
+    <div class="wrapper">
+        <header id="myheader">
+            <ul class="nav-links">
+                <li><a href="Homepagina.html">Home</a></li>
+                <li><a href="Overzichtpagina.html">Overzichtpagina</a></li>
+                <li><a href="Voedingpagina.html">Voeding</a></li>
+                <li><a href="Supplementenpagina.html">Supplementen</a></li>
+                <li><a href="Trainingpagina.html">Training</a></li>
+                <li><a href="Recoverypagina.html">Recovery</a></li>
+                <li><a href="Mentalpagina.html">Mental</a></li>
+                <li><a href="Voor&Nadeelpagina.html">Voor & Nadelen</a></li>
+                <li><a href="Contactpagina.html" class="active">Contact</a></li>
+            </ul>
+            <!-- mijn logo "Fitness & Health" -->
+            <div class="logo text-center">
+                <a href=""><span>Fitness & Health</span></a>
+            </div>
+            <!-- dit word gebruikt als mijn scherm onder bepaalde pixels gaat en de navbar ook verplaatst. -->
+            <div class="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- dit is de zoekbalk rechtsboven op mijn pagina die bij het resizen onder bepaalde pixels ook in de nieuwe navbar terechtkomt -->
+            <div class="cart-area">
+                <div class="input-group rounded">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <!-- Dit is de eigenlijk pagina sectie waarbij ik mijn tekst heb geplaatst -->
+        <section id="Home-Section ">
+            <div class="container home-content py-5 mt-5">
+                <div class="row pb-4">
+                    <h2 class="text-center text-light">Contacteer ons!</h2>
+                    <p class="grey text-center">Heb je nog vragen, of neem je gewoon graag contact op,<br>
+                        aarzel zeker niet! maar contacteer ons op</p>
+                    <!-- hierin staat contactinformatie van echte persoon -->
+                    <div class="col-md-6 mt-3">
+                        <div class="sub-box text-center grey">
+                            <h6>naam: Kevin Coninckx</h6>
+                            <h6>E-mail:Kevin.coninckx@student.ap.be</h6>
+                            <h6>adres: Noorderplaats 2, 2000 Antwerpen</h6>
+                            <h6> gsm: 0489342150</h6>
+
+                        </div>
+                    </div>
+                    <!-- hierin staat contactinformatie van fake persoon -->
+                    <div class="col-md-6 mt-3">
+                        <div class="sub-box text-center grey">
+                            <h6>naam: Elon Musk</h6>
+                            <h6>E-mail:Elon.musk@Student.ap.be</h6>
+                            <h6>adres: Noorderplaats 2, 2000 Antwerpen</h6>
+                            <h6>gsm: 0489135061</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12  mt-5 ">
+                    <!-- Map 1 -->
+                    <div id="map1"></div>
+                </div>
+            </div>
+    </div>
+    </section>
+    </div>
+    <!-- Fixed Navbar die ik gebruik als mijn schermgrootte onder bepaalde pixels gaan vb bij een gsm dan krijg je een andere navbar te zien. -->
+    <div class="custom-nav">
+        <ul>
+            <li><a href="Homepagina.html">Home</a></li>
+            <li><a href="Overzichtpagina.html">Overzichtpagina</a></li>
+            <li><a href="Voedingpagina.html">Voeding</a></li>
+            <li><a href="Supplementenpagina.html">Supplementen</a></li>
+            <li><a href="Trainingpagina.html">Training</a></li>
+            <li><a href="Recoverypagina.html">Recovery</a></li>
+            <li><a href="Mentalpagina.html">Mental</a></li>
+            <li><a href="Voor&Nadeelpagina.html">Voor & Nadelen</a></li>
+            <li><a href="Contactpagina.html" class="active">Contact</a></li>
+        </ul>
+        <!-- de searchbar met werkende zoekknop  -->
+        <div class="input-group rounded justify-content-center">
+            <form class="d-flex">
+                <input class="form-control me-2 w" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+    <footer class="container-fluid text-center h6 small p-4">&copy; Fitness&Health</footer>
+    <script>
+        // Initialize maps
+        var map1 = L.map('map1').setView([51.23009,  4.41616], 17);
+           
+      
+     
+        // Add a tile layer to each map
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map1);
+
+        // marker toevoegen
+        L.marker([51.5, -0.09]).addTo(map1)
+        .bindPopup('A sample marker!');
+
+        // bepaal de rechthoek rondom het gebouw van AP
+        let bounds = [[51.22985517302704, 4.413663749649849], [51.2307890172103, 4.415401821074747]];
+          
+        // kleur de rechthoek in met de rode kleur
+        L.rectangle(bounds, {color: "#e60005", weight: 1}).addTo(map1);
+         
+        // plaatst een marker met als tekst "AP-Hogeschool" en eronder "Noorderplaats 2"
+        let apMarker = L.marker([51.23025491440373, 4.41452742094432]).addTo(map1);
+        apMarker.bindPopup("<b>AP-Hogeschool</b><br>Noorderplaats 2").openPopup();
+   
+           
+     
+    </script>
+</body>
+
+</html>
