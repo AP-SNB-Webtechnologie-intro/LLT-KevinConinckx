@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="bestanden/css/bootstrap.min.css">
     <link rel="stylesheet" href="bestanden/css/style.css">
     <link rel="stylesheet" href="bestanden/css/responsive.css">
+    <link rel="stylesheet" href="bestanden/css/mapstyle.css">
     <!-- Javascript Bootstrap Bundel met Popper -->
     <script src="bestanden/js/bootstrap.bundle.min.js"></script>
     <!-- Font Awesome Kit -->
@@ -19,6 +20,10 @@
     <script src="bestanden/js/jquery.min.js"></script>
     <!-- Javascript eigen geschreven script -->
     <script src="bestanden/js/Navbarscript.js"></script>
+    <!-- Leaflet JavaScript -->
+   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Leaflet JavaScript voor Mapscript -->
+   <script src="bestanden/js/MapscriptVoedingpagina.js"></script>
 </head>
 
 <body>
@@ -81,6 +86,9 @@
                         <div class="subbox ">
                             <!-- dit is mijn foto voor op de pagina -->
                             <img src="bestanden/foto's/medicine.png" alt="home-photo" class="w-100 shadow rounded-3">
+                        </div>
+                        <div class="col-md-12  mt-5 ">
+                            <div id="map" style="height: 400px;"></div>
                         </div>
                     </div>
                 </div>
