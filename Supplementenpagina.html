@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <!-- required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="bestanden/foto's/favicon-32x32.webp" type="image/x-icon">
+    <title>Fitness & Health</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="bestanden/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bestanden/css/style.css">
+    <link rel="stylesheet" href="bestanden/css/responsive.css">
+    <!-- Javascript Bootstrap Bundel met Popper -->
+    <script src="bestanden/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/d94e9b7d2c.js" crossorigin="anonymous"></script>
+    <!-- Javascript jQuery -->
+    <script src="bestanden/js/jquery.min.js"></script>
+    <!-- Javascript eigen geschreven script -->
+    <script src="bestanden/js/Navbarscript.js"></script>
+</head>
+
+<body>
+    <!-- navbar met wrapper die mijn gewone navigatie balk voorstelt tijdens hebt gebruik van een pc bijvoorbeeld -->
+    <div class="wrapper">
+        <header id="myheader">
+            <ul class="nav-links">
+                <li><a href="Homepagina.html">Home</a></li>
+                <li><a href="Overzichtpagina.html">Overzichtpagina</a></li>
+                <li><a href="Voedingpagina.html">Voeding</a></li>
+                <li><a href="Supplementenpagina.html" class="active">Supplementen</a></li>
+                <li><a href="Trainingpagina.html">Training</a></li>
+                <li><a href="Recoverypagina.html">Recovery</a></li>
+                <li><a href="Mentalpagina.html">Mental</a></li>
+                <li><a href="Voor&Nadeelpagina.html">Voor & Nadelen</a></li>
+                <li><a href="Contactpagina.html">Contact</a></li>
+            </ul>
+            <!-- mijn logo "Fitness & Health" -->
+            <div class="logo text-center">
+                <a href=""><span>Fitness & Health</span></a>
+            </div>
+            <!-- dit word gebruikt als mijn scherm onder bepaalde pixels gaat en de navbar ook verplaatst. -->
+            <div class="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- dit is de zoekbalk rechtsboven op mijn pagina die bij het resizen onder bepaalde pixels ook in de nieuwe navbar terechtkomt -->
+            <div class="cart-area">
+                <div class="input-group rounded">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                      </form>
+                </div>
+            </div>
+        </header>
+        <!-- Dit is de eigenlijk pagina sectie waarbij ik mijn tekst heb geplaatst -->
+        <section id="Home-Section ">
+            <div class="container home-content pt-5 pb-5">
+                <div class="row pb-4">
+                    <div class="col-lg-6 mb-3 mb-lg-0">
+                        <div class="subbox px-3">
+                            <div>
+                                <h2 class="text-light mb-3 ms-0">Supplementen</h2>
+                            </div>
+                            <p class="mt-3 ">bij fitness wordt vaak gebruik gemaakt van voedingssupplementen om
+                                specifieke fitnessdoelen te
+                                ondersteunen.</p>
+                            <hr class="text-light">
+                            <p>Populaire supplementen omvatten eiwitten voor
+                                spiergroei, creatine voor kracht, BCAA's voor herstel, pre- workout supplementen voor
+                                energie, omega-3 vetzuren voor ontstekingsremming, en vitamines/mineralen om tekorten
+                                aan te vullen.</p>
+                            <p>Het is belangrijk om supplementen te combineren met een gebalanceerd dieet en een passend
+                                trainingsprogramma, en het is raadzaam om advies in te winnen bij een professional
+                                voordat je supplementen gebruikt. Supplementen kunnen nooit een gezonde voeding
+                                vervangen.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                        <div class="subbox ">
+                            <!-- dit is mijn foto voor op de pagina -->
+                          
+                            <figure>
+                                <img src="bestanden/foto's/medicine.png" alt="home-photo" class="w-100 shadow rounded-3">
+                                <figcaption class="text-start py-1">Foto Supplementen</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Fixed Navbar die ik gebruik als mijn schermgrootte onder bepaalde pixels gaan vb bij een gsm dan krijg je een andere navbar te zien. -->
+    <div class="custom-nav">
+        <ul>
+            <li><a href="Homepagina.html">Home</a></li>
+            <li><a href="Overzichtpagina.html">Overzichtpagina</a></li>
+            <li><a href="Voedingpagina.html">Voeding</a></li>
+            <li><a href="Supplementenpagina.html" class="active">Supplementen</a></li>
+            <li><a href="Trainingpagina.html">Training</a></li>
+            <li><a href="Recoverypagina.html">Recovery</a></li>
+            <li><a href="Mentalpagina.html">Mental</a></li>
+            <li><a href="Voor&Nadeelpagina.html">Voor & Nadelen</a></li>
+            <li><a href="Contactpagina.html">Contact</a></li>
+        </ul>
+        <!-- de searchbar met werkende zoekknop  -->
+        <div class="input-group rounded justify-content-center">
+            <form class="d-flex">
+                <input class="form-control me-2 w" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+        </div>
+    </div>
+    <footer class="container-fluid text-center h6 small p-4">&copy; Fitness&Health</footer>
+</body>
+
+</html>
