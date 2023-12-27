@@ -43,7 +43,7 @@ Je kan een grotere lijst vinden op websites als [apilist.fun](https://apilist.fu
 **BELANGRIJK!** Je moet niet alle teksten volledig zelf schrijven. Maak *om de teksten te schrijven* gerust gebruik van tools als chat GPT.
 
 Je website bevat verschillende pagina's:
- - **home** (`Homepagina.html`): 1 pagina met een beschrijving van jouw onderwerp. Deze pagina *moet* bevatten:
+ - **home** (`index.html`): 1 pagina met een beschrijving van jouw onderwerp. Deze pagina *moet* bevatten:
    - een sfeerbeeld
    - een uitleg over jezelf in de context van het onderwerp
    - een foto van jezelf
